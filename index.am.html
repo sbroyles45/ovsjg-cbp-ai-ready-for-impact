@@ -128,7 +128,7 @@
   .dim-list li{padding-left:18px; position:relative; font-size:0.97rem; color:var(--ink);}
   .dim-list li::before{content:""; position:absolute; left:0; top:0.6em; width:7px; height:7px; border-radius:50%; background:var(--red);}
   .dim-list strong{font-weight:600;}
-  .series-meta{margin-top:18px; font-size:0.82rem; color:var(--slate);}
+  .series-meta{margin-top:4px; font-size:0.82rem; color:var(--slate);}
 
   /* ---- studio access callout ---- */
   .studio-access-wrap{max-width:840px; margin:0 auto; padding:0 24px;}
@@ -188,7 +188,7 @@
     background:none; border-left:3px dashed var(--line-strong); color:var(--slate); font-style:italic;
   }
   .takeaway.placeholder b{color:var(--slate);}
-  .delivered-by{margin-top:10px; font-size:0.82rem; color:var(--slate);}
+  .delivered-by{margin-top:10px; margin-bottom:0; font-size:0.82rem; color:var(--slate);}
 
   .media-frame{
     margin-top:22px; border-radius:12px; border:1px dashed var(--line-strong);
@@ -277,13 +277,19 @@
      Investment Studio" label + the language dropdown on one row even with
      that label stacked, so fall back to letting the whole nav wrap onto
      as many lines as it needs instead of overlapping. */
+  /* ---- anchor-jump offset, keeps a section from landing tucked under the
+     sticky nav; three tiers matching the nav's own responsive height ---- */
+  #top, #studio, #s1, #s2, #s3, #s4, #wrap{scroll-margin-top:72px;}
+
   @media (max-width:800px){
     .jump-inner{flex-wrap:wrap;}
     .jump-links{flex-wrap:wrap;}
+    #top, #studio, #s1, #s2, #s3, #s4, #wrap{scroll-margin-top:120px;}
   }
   @media (max-width:560px){
     .jump-inner{gap:16px;}
     .contact-card{flex-direction:column; align-items:flex-start;}
+    #top, #studio, #s1, #s2, #s3, #s4, #wrap{scroll-margin-top:160px;}
   }
 
 
@@ -445,10 +451,10 @@
   <details class="ts-collapse" open>
     <summary>የክፍል የጊዜ መስመር (4)</summary>
     <ul class="timestamp-list">
-    <li><span class="ts-time">33:27</span><span>አቀባበል እና በዚህ ሳምንት ቀርፋፋ ፍጥነት</span></li>
-    <li><span class="ts-time">36:49</span><span>የሀብት ልማትን እንደገና ማዋቀር</span></li>
-    <li><span class="ts-time">1:20:21</span><span>ቀጥታ ማሳያ፦ ለ CASA DC ስትራቴጂ መገንባት</span></li>
-    <li><span class="ts-time">1:52:10</span><span>ማጠቃለያ እና ቀጣይ እርምጃዎች</span></li>
+    <li><span class="ts-time">0:07</span><span>አቀባበል እና በዚህ ሳምንት ቀርፋፋ ፍጥነት</span></li>
+    <li><span class="ts-time">3:29</span><span>የሀብት ልማትን እንደገና ማዋቀር</span></li>
+    <li><span class="ts-time">47:01</span><span>ቀጥታ ማሳያ፦ ለ CASA DC ስትራቴጂ መገንባት</span></li>
+    <li><span class="ts-time">1:18:50</span><span>ማጠቃለያ እና ቀጣይ እርምጃዎች</span></li>
     </ul>
   </details>
   <div class="resource-row">
@@ -478,13 +484,12 @@
     <iframe src="https://drive.google.com/file/d/1acA6HMsIkIKJmofcj3_ApomIRJibJskj/preview" title="የክፍለ ጊዜ 3 ቀረጻ፦ AI ለስራ አመራር እና ፕሮግራም አፈጻጸም" allow="autoplay" allowfullscreen loading="lazy"></iframe>
   </div>
   <details class="ts-collapse" open>
-    <summary>የክፍል የጊዜ መስመር (5)</summary>
+    <summary>የክፍል የጊዜ መስመር (4)</summary>
     <ul class="timestamp-list">
-    <li><span class="ts-time">20:57</span><span>አቀባበል እና የክፍለ ጊዜው ማዕቀፍ</span></li>
-    <li><span class="ts-time">25:54</span><span>ስትራቴጂ በትክክል ምን እንደሆነ</span></li>
-    <li><span class="ts-time">1:21:53</span><span>የ AI መሳሪያ መምረጥ እና ማዋቀር</span></li>
-    <li><span class="ts-time">1:26:38</span><span>ክህሎቶች፣ የስራ ሂደቶች፣ እና ውህደቶች</span></li>
-    <li><span class="ts-time">1:47:09</span><span>ተደራሽነት እና ቀጣይ እርምጃዎች</span></li>
+    <li><span class="ts-time">0:54</span><span>ስትራቴጂ በትክክል ምን እንደሆነ</span></li>
+    <li><span class="ts-time">56:53</span><span>የ AI መሳሪያ መምረጥ እና ማዋቀር</span></li>
+    <li><span class="ts-time">1:01:38</span><span>ክህሎቶች፣ የስራ ሂደቶች፣ እና ውህደቶች</span></li>
+    <li><span class="ts-time">1:22:09</span><span>ተደራሽነት እና ቀጣይ እርምጃዎች</span></li>
     </ul>
   </details>
   <div class="resource-row">
@@ -515,11 +520,10 @@
     <iframe src="https://drive.google.com/file/d/1D38s__eQIOsr44MX9GO2pxmz3FrmRON6/preview" title="የክፍለ ጊዜ 4 ቀረጻ፦ የ AI አስተዳደር፣ ፖሊሲ፣ እና ድርጅታዊ አመራር" allow="autoplay" allowfullscreen loading="lazy"></iframe>
   </div>
   <details class="ts-collapse" open>
-    <summary>የክፍል የጊዜ መስመር (3)</summary>
+    <summary>የክፍል የጊዜ መስመር (2)</summary>
     <ul class="timestamp-list">
-    <li><span class="ts-time">12:16</span><span>ወደ መጨረሻው ክፍለ ጊዜ አቀባበል</span></li>
-    <li><span class="ts-time">1:19:47</span><span>የመዝጊያ ጥያቄ እና መልስ እና ማሳሰቢያዎች</span></li>
-    <li><span class="ts-time">1:25:54</span><span>ቀጣይ እርምጃዎች</span></li>
+    <li><span class="ts-time">1:02:17</span><span>የመዝጊያ ጥያቄ እና መልስ እና ማሳሰቢያዎች</span></li>
+    <li><span class="ts-time">1:08:24</span><span>ቀጣይ እርምጃዎች</span></li>
     </ul>
   </details>
   <div class="resource-row">

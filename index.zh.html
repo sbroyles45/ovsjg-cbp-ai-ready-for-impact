@@ -128,7 +128,7 @@
   .dim-list li{padding-left:18px; position:relative; font-size:0.97rem; color:var(--ink);}
   .dim-list li::before{content:""; position:absolute; left:0; top:0.6em; width:7px; height:7px; border-radius:50%; background:var(--red);}
   .dim-list strong{font-weight:600;}
-  .series-meta{margin-top:18px; font-size:0.82rem; color:var(--slate);}
+  .series-meta{margin-top:4px; font-size:0.82rem; color:var(--slate);}
 
   /* ---- studio access callout ---- */
   .studio-access-wrap{max-width:840px; margin:0 auto; padding:0 24px;}
@@ -188,7 +188,7 @@
     background:none; border-left:3px dashed var(--line-strong); color:var(--slate); font-style:italic;
   }
   .takeaway.placeholder b{color:var(--slate);}
-  .delivered-by{margin-top:10px; font-size:0.82rem; color:var(--slate);}
+  .delivered-by{margin-top:10px; margin-bottom:0; font-size:0.82rem; color:var(--slate);}
 
   .media-frame{
     margin-top:22px; border-radius:12px; border:1px dashed var(--line-strong);
@@ -277,13 +277,19 @@
      Investment Studio" label + the language dropdown on one row even with
      that label stacked, so fall back to letting the whole nav wrap onto
      as many lines as it needs instead of overlapping. */
+  /* ---- anchor-jump offset, keeps a section from landing tucked under the
+     sticky nav; three tiers matching the nav's own responsive height ---- */
+  #top, #studio, #s1, #s2, #s3, #s4, #wrap{scroll-margin-top:72px;}
+
   @media (max-width:800px){
     .jump-inner{flex-wrap:wrap;}
     .jump-links{flex-wrap:wrap;}
+    #top, #studio, #s1, #s2, #s3, #s4, #wrap{scroll-margin-top:120px;}
   }
   @media (max-width:560px){
     .jump-inner{gap:16px;}
     .contact-card{flex-direction:column; align-items:flex-start;}
+    #top, #studio, #s1, #s2, #s3, #s4, #wrap{scroll-margin-top:160px;}
   }
 
 
@@ -445,10 +451,10 @@
   <details class="ts-collapse" open>
     <summary>章节时间线 (4)</summary>
     <ul class="timestamp-list">
-    <li><span class="ts-time">33:27</span><span>欢迎致辞,本周节奏放缓</span></li>
-    <li><span class="ts-time">36:49</span><span>重新定义资源开发</span></li>
-    <li><span class="ts-time">1:20:21</span><span>现场演示:为 CASA DC 制定战略</span></li>
-    <li><span class="ts-time">1:52:10</span><span>结语与后续步骤</span></li>
+    <li><span class="ts-time">0:07</span><span>欢迎致辞,本周节奏放缓</span></li>
+    <li><span class="ts-time">3:29</span><span>重新定义资源开发</span></li>
+    <li><span class="ts-time">47:01</span><span>现场演示:为 CASA DC 制定战略</span></li>
+    <li><span class="ts-time">1:18:50</span><span>结语与后续步骤</span></li>
     </ul>
   </details>
   <div class="resource-row">
@@ -478,13 +484,12 @@
     <iframe src="https://drive.google.com/file/d/1acA6HMsIkIKJmofcj3_ApomIRJibJskj/preview" title="第三讲录像:人工智能与运营及项目执行" allow="autoplay" allowfullscreen loading="lazy"></iframe>
   </div>
   <details class="ts-collapse" open>
-    <summary>章节时间线 (5)</summary>
+    <summary>章节时间线 (4)</summary>
     <ul class="timestamp-list">
-    <li><span class="ts-time">20:57</span><span>欢迎致辞与本讲概述</span></li>
-    <li><span class="ts-time">25:54</span><span>战略的真正含义</span></li>
-    <li><span class="ts-time">1:21:53</span><span>选择与配置人工智能工具</span></li>
-    <li><span class="ts-time">1:26:38</span><span>技能、工作流程与系统集成</span></li>
-    <li><span class="ts-time">1:47:09</span><span>访问权限与后续步骤</span></li>
+    <li><span class="ts-time">0:54</span><span>战略的真正含义</span></li>
+    <li><span class="ts-time">56:53</span><span>选择与配置人工智能工具</span></li>
+    <li><span class="ts-time">1:01:38</span><span>技能、工作流程与系统集成</span></li>
+    <li><span class="ts-time">1:22:09</span><span>访问权限与后续步骤</span></li>
     </ul>
   </details>
   <div class="resource-row">
@@ -515,11 +520,10 @@
     <iframe src="https://drive.google.com/file/d/1D38s__eQIOsr44MX9GO2pxmz3FrmRON6/preview" title="第四讲录像:人工智能治理、政策与机构领导力" allow="autoplay" allowfullscreen loading="lazy"></iframe>
   </div>
   <details class="ts-collapse" open>
-    <summary>章节时间线 (3)</summary>
+    <summary>章节时间线 (2)</summary>
     <ul class="timestamp-list">
-    <li><span class="ts-time">12:16</span><span>欢迎参加最后一讲</span></li>
-    <li><span class="ts-time">1:19:47</span><span>结语问答与免责声明</span></li>
-    <li><span class="ts-time">1:25:54</span><span>后续步骤</span></li>
+    <li><span class="ts-time">1:02:17</span><span>结语问答与免责声明</span></li>
+    <li><span class="ts-time">1:08:24</span><span>后续步骤</span></li>
     </ul>
   </details>
   <div class="resource-row">

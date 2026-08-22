@@ -128,7 +128,7 @@
   .dim-list li{padding-left:18px; position:relative; font-size:0.97rem; color:var(--ink);}
   .dim-list li::before{content:""; position:absolute; left:0; top:0.6em; width:7px; height:7px; border-radius:50%; background:var(--red);}
   .dim-list strong{font-weight:600;}
-  .series-meta{margin-top:18px; font-size:0.82rem; color:var(--slate);}
+  .series-meta{margin-top:4px; font-size:0.82rem; color:var(--slate);}
 
   /* ---- studio access callout ---- */
   .studio-access-wrap{max-width:840px; margin:0 auto; padding:0 24px;}
@@ -188,7 +188,7 @@
     background:none; border-left:3px dashed var(--line-strong); color:var(--slate); font-style:italic;
   }
   .takeaway.placeholder b{color:var(--slate);}
-  .delivered-by{margin-top:10px; font-size:0.82rem; color:var(--slate);}
+  .delivered-by{margin-top:10px; margin-bottom:0; font-size:0.82rem; color:var(--slate);}
 
   .media-frame{
     margin-top:22px; border-radius:12px; border:1px dashed var(--line-strong);
@@ -277,13 +277,19 @@
      Investment Studio" label + the language dropdown on one row even with
      that label stacked, so fall back to letting the whole nav wrap onto
      as many lines as it needs instead of overlapping. */
+  /* ---- anchor-jump offset, keeps a section from landing tucked under the
+     sticky nav; three tiers matching the nav's own responsive height ---- */
+  #top, #studio, #s1, #s2, #s3, #s4, #wrap{scroll-margin-top:72px;}
+
   @media (max-width:800px){
     .jump-inner{flex-wrap:wrap;}
     .jump-links{flex-wrap:wrap;}
+    #top, #studio, #s1, #s2, #s3, #s4, #wrap{scroll-margin-top:120px;}
   }
   @media (max-width:560px){
     .jump-inner{gap:16px;}
     .contact-card{flex-direction:column; align-items:flex-start;}
+    #top, #studio, #s1, #s2, #s3, #s4, #wrap{scroll-margin-top:160px;}
   }
 
 
@@ -445,10 +451,10 @@
   <details class="ts-collapse" open>
     <summary>Dòng thời gian theo phần (4)</summary>
     <ul class="timestamp-list">
-    <li><span class="ts-time">33:27</span><span>Lời chào mừng và nhịp độ chậm hơn trong tuần này</span></li>
-    <li><span class="ts-time">36:49</span><span>Nhìn lại khái niệm phát triển nguồn lực</span></li>
-    <li><span class="ts-time">1:20:21</span><span>Demo trực tiếp: xây dựng chiến lược cho CASA DC</span></li>
-    <li><span class="ts-time">1:52:10</span><span>Kết thúc và các bước tiếp theo</span></li>
+    <li><span class="ts-time">0:07</span><span>Lời chào mừng và nhịp độ chậm hơn trong tuần này</span></li>
+    <li><span class="ts-time">3:29</span><span>Nhìn lại khái niệm phát triển nguồn lực</span></li>
+    <li><span class="ts-time">47:01</span><span>Demo trực tiếp: xây dựng chiến lược cho CASA DC</span></li>
+    <li><span class="ts-time">1:18:50</span><span>Kết thúc và các bước tiếp theo</span></li>
     </ul>
   </details>
   <div class="resource-row">
@@ -478,13 +484,12 @@
     <iframe src="https://drive.google.com/file/d/1acA6HMsIkIKJmofcj3_ApomIRJibJskj/preview" title="Video Buổi 3: AI trong Vận Hành và Triển Khai Chương Trình" allow="autoplay" allowfullscreen loading="lazy"></iframe>
   </div>
   <details class="ts-collapse" open>
-    <summary>Dòng thời gian theo phần (5)</summary>
+    <summary>Dòng thời gian theo phần (4)</summary>
     <ul class="timestamp-list">
-    <li><span class="ts-time">20:57</span><span>Lời chào mừng và giới thiệu khung nội dung buổi học</span></li>
-    <li><span class="ts-time">25:54</span><span>Chiến lược thực sự là gì</span></li>
-    <li><span class="ts-time">1:21:53</span><span>Lựa chọn và thiết lập một công cụ AI</span></li>
-    <li><span class="ts-time">1:26:38</span><span>Kỹ năng, quy trình làm việc, và tích hợp</span></li>
-    <li><span class="ts-time">1:47:09</span><span>Quyền truy cập và các bước tiếp theo</span></li>
+    <li><span class="ts-time">0:54</span><span>Chiến lược thực sự là gì</span></li>
+    <li><span class="ts-time">56:53</span><span>Lựa chọn và thiết lập một công cụ AI</span></li>
+    <li><span class="ts-time">1:01:38</span><span>Kỹ năng, quy trình làm việc, và tích hợp</span></li>
+    <li><span class="ts-time">1:22:09</span><span>Quyền truy cập và các bước tiếp theo</span></li>
     </ul>
   </details>
   <div class="resource-row">
@@ -515,11 +520,10 @@
     <iframe src="https://drive.google.com/file/d/1D38s__eQIOsr44MX9GO2pxmz3FrmRON6/preview" title="Video Buổi 4: Quản Trị AI, Chính Sách, và Vai Trò Lãnh Đạo Tổ Chức" allow="autoplay" allowfullscreen loading="lazy"></iframe>
   </div>
   <details class="ts-collapse" open>
-    <summary>Dòng thời gian theo phần (3)</summary>
+    <summary>Dòng thời gian theo phần (2)</summary>
     <ul class="timestamp-list">
-    <li><span class="ts-time">12:16</span><span>Chào mừng đến với buổi học cuối cùng</span></li>
-    <li><span class="ts-time">1:19:47</span><span>Hỏi đáp kết thúc và các lưu ý quan trọng</span></li>
-    <li><span class="ts-time">1:25:54</span><span>Các bước tiếp theo</span></li>
+    <li><span class="ts-time">1:02:17</span><span>Hỏi đáp kết thúc và các lưu ý quan trọng</span></li>
+    <li><span class="ts-time">1:08:24</span><span>Các bước tiếp theo</span></li>
     </ul>
   </details>
   <div class="resource-row">
