@@ -305,10 +305,11 @@
   .lang-dropdown{position:relative; flex:none;}
   .lang-dropdown summary{
     list-style:none; cursor:pointer;
-    display:flex; align-items:center; gap:5px;
+    display:flex; align-items:center; gap:6px;
     font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em;
     color:var(--slate); white-space:nowrap; padding:4px 0; border-bottom:2px solid transparent;
   }
+  .lang-dropdown summary .lang-globe{flex:none;}
   .lang-dropdown summary::-webkit-details-marker{display:none;}
   .lang-dropdown summary::after{content:"▾"; font-size:0.7em;}
   .lang-dropdown[open] summary::after{content:"▴";}
@@ -350,7 +351,7 @@
       <a href="#wrap">Conclusion</a>
     </div>
     <details class="lang-dropdown">
-      <summary lang="fr" aria-label="Langue: Français">FR</summary>
+      <summary lang="fr" aria-label="Langue: Français"><svg class="lang-globe" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Français</summary>
       <div class="lang-menu">
       <a href="index.html" lang="en">English</a>
       <a href="index.es.html" lang="es">Español</a>
